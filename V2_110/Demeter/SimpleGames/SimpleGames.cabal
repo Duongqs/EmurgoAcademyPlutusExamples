@@ -1,5 +1,5 @@
 cabal-version:      3.0
-name:               Utils
+name:               SimpleGames
 version:            1.1.0.0
 license:            MIT
 license-file:       LICENSE
@@ -10,20 +10,16 @@ build-type:         Simple
 extra-doc-files:    CHANGELOG.md
 
 library
-    exposed-modules:  Serialise, Mappers
+    exposed-modules:  MathBounty
     build-depends:    aeson
                     , base ^>=4.14.3.0
-                    , base16-bytestring
                     , bytestring
                     , cardano-api
-                    , cardano-crypto-class
-                    , cardano-ledger-core
                     , plutus-tx
                     , plutus-tx-plugin
                     , plutus-ledger-api
                     , serialise
-                    , text
-                    , time
+                    , Utils
                     
     hs-source-dirs:   src
     default-language: Haskell2010
